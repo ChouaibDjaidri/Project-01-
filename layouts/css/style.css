@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+body{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: #0a0a0a;
+    color: white;
+}
+.logoimg {
+    font-size: 80px;
+    text-align: center;
+    padding: 20px;
+    padding-top: 0;
+}
+.logoimg .logoimgspn {
+    font-family: 'Fredoka One', sans-serif;
+    border-bottom: 7px solid #29ae87;
+    padding-bottom: 7px;
+   }
+.back .layer .rayd .btns .act{
+    border-bottom: 7px solid #29ae87;
+}
+/* Index form*/
+.back{
+    perspective: 200px;
+    height: 700px;
+    width: 100%;
+    background-image: url("/tut/layouts/imgs/index.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Slab', serif;
+}
+.back .skew{
+    position: absolute;
+    bottom: -75px;
+    width: 100%;
+    height: 150px;
+    background-color: #0a0a0a;
+    transform: skewY(5deg);
+}
+.back .layer{
+    width: 100%;
+    height: 700px;
+    background-color: rgba(0, 0, 0, 0.70);
+}
+.back .layer .rayd{
+    width: 50%;
+    height: 700px;
+    overflow: hidden;
+    float: right;
+}
+.back .layer .rayd .btns{
+    width: 100%;
+    height: 80px;
+}
+.back .layer .rayd .btns button{
+    float: left;
+    background-color: #1b1e21;
+    width: 50%;
+    padding: 15px;
+    border: none;
+    color: white;
+    border-bottom: 7px solid #1b1e21;
+    font-size: 30px;
+}
+.back .layer .rayd .forms{
+    width: 100%;
+    height: 620px;
+    background-color: #0a0a0a;
+}
+.back .layer .rayd .forms .formd{
+    padding: 20px;
+    background-color: #1b1e21;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    height: 500px;
+}
+.back .layer .rayd .forms .formd input[type=text],.back .layer .rayd .forms .formd input[type=password]{
+    width: 80%;
+    border: none;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #0a0a0a;
+    border-bottom: 2px solid #29ae87;
+}
+::placeholder{
+    color: white;
+}
+.back .layer .rayd .forms .formd input[type=submit]{
+    padding: 10px;
+    font-size: 20px;
+    float: right;
+    border: none;
+    margin-top: 10px;
+    width: 150px;
+    color: #eeeeee;
+    background-color: #29ae87;
+}
+.back .layer .rayd .forms .formd .remeber{
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.back .layer .rayd .forms .formd .remeber span{
+    margin-left: 5px;
+}
+.skew2{
+    position: absolute;
+    bottom: 0;
+    margin-left: -40px;
+    width: 100%;
+    height: 160px;
+    background-color: #0a0a0a;
+    transform: skewY(5deg);
+}
+
+@media (max-width: 1100px) AND (min-width: 900px) {
+    .back .layer .rayd{
+        width: 60%;
+        height: 700px;
+        overflow: hidden;
+        float: right;
+    }
+}
+
+@media (max-width: 900px) AND (min-width: 500px) {
+    .back .layer .rayd{
+        width: 100%;
+        height: 700px;
+        overflow: hidden;
+        float: right;
+    }
+    .back .skew {
+        height: 140px;
+    }
+}
+@media (max-width: 500px) AND (min-width: 100px) {
+    .back .layer .rayd{
+        width: 100%;
+    }
+    .logoimg {
+        font-size: 55px;
+    }
+    .back .layer .rayd .forms .formd{
+        width: 100%;
+        margin-left: 0;
+    }
+    .back .layer .rayd .forms .formd input[type=text],.back .layer .rayd .forms .formd input[type=password]{
+        width: 90%;
+    }
+    .skew2{
+        width: 115%;
+        height: 190px;
+    }
+}
